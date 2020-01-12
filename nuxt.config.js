@@ -1,5 +1,12 @@
+import nuxtPort from './port.js'
 export default {
   mode: 'universal',
+  /*
+   ** Custom port
+   */
+  server: {
+    port: nuxtPort
+  },
   /*
    ** Headers of the page
    */
@@ -14,7 +21,13 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Roboto'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color

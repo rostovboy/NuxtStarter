@@ -1,4 +1,4 @@
-# RentCars
+# StartNuxtProject
 
 > My ultimate Nuxt.js project
 
