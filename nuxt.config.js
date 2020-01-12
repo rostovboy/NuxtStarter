@@ -36,7 +36,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['element-ui/lib/theme-chalk/index.css'],
+  css: ['element-ui/lib/theme-chalk/index.css', '@/assets/scss/index.scss'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -53,13 +53,21 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    // Doc: https://bootstrap-vue.js.org/docs/
+    'bootstrap-vue/nuxt'
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  bootstrapVue: {
+    // bootstrapCSS: false, // here you can disable automatic bootstrapCSS in case you are loading it yourself using sass
+    // bootstrapVueCSS: false, // CSS that is specific to bootstrapVue components can also be disabled. That way you won't load css for modules that you don't use
+    // componentPlugins: ['Collapse', 'Dropdown'], // Here you can specify which components you want to load and use
+    // directivePlugins: [] // Here you can specify which directives you want to load and use. Look into official docs to get a list of what's available
+  },
   /*
    ** Build configuration
    */
